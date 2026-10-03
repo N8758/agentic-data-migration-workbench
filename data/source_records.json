@@ -1,0 +1,221 @@
+{
+  "dataset": "legacy_customers",
+  "records": [
+    {
+      "customer_id": 1001,
+      "full_name": "Aarav Sharma",
+      "email": "aarav.sharma@example.com",
+      "phone": "+91-9876543210",
+      "date_of_birth": "15-04-1998",
+      "status": "active",
+      "created_at": "10-01-2024 09:30:00"
+    },
+    {
+      "customer_id": 1002,
+      "full_name": "Priya Patil",
+      "email": "priya.patil@example.com",
+      "phone": "+91-9876543211",
+      "date_of_birth": "22-08-1997",
+      "status": "active",
+      "created_at": "12-01-2024 10:15:00"
+    },
+    {
+      "customer_id": 1003,
+      "full_name": "Rahul Deshmukh",
+      "email": "rahul.deshmukh@example.com",
+      "phone": "+91-9876543212",
+      "date_of_birth": "05-12-1995",
+      "status": "inactive",
+      "created_at": "15-01-2024 11:20:00"
+    },
+    {
+      "customer_id": 1004,
+      "full_name": "Sneha Kulkarni",
+      "email": "sneha.kulkarni@example.com",
+      "phone": "+91-9876543213",
+      "date_of_birth": "18-03-1999",
+      "status": "active",
+      "created_at": "18-01-2024 12:10:00"
+    },
+    {
+      "customer_id": 1005,
+      "full_name": "Vikram Joshi",
+      "email": "vikram.joshi@example.com",
+      "phone": "+91-9876543214",
+      "date_of_birth": "30-06-1994",
+      "status": "blocked",
+      "created_at": "20-01-2024 14:45:00"
+    },
+    {
+      "customer_id": 1006,
+      "full_name": "Neha Mehta",
+      "email": "neha.mehta@example.com",
+      "phone": "+91-9876543215",
+      "date_of_birth": "11-09-2000",
+      "status": "active",
+      "created_at": "22-01-2024 15:30:00"
+    },
+    {
+      "customer_id": 1007,
+      "full_name": "Aditya More",
+      "email": "aditya.more@example.com",
+      "phone": "+91-9876543216",
+      "date_of_birth": "27-02-1996",
+      "status": "inactive",
+      "created_at": "25-01-2024 09:45:00"
+    },
+    {
+      "customer_id": 1008,
+      "full_name": "Pooja Jadhav",
+      "email": "pooja.jadhav@example.com",
+      "phone": "+91-9876543217",
+      "date_of_birth": "09-11-1998",
+      "status": "active",
+      "created_at": "28-01-2024 10:30:00"
+    },
+    {
+      "customer_id": 1009,
+      "full_name": "Rohan Pawar",
+      "email": "rohan.pawar@example.com",
+      "phone": "+91-9876543218",
+      "date_of_birth": "14-07-1993",
+      "status": "active",
+      "created_at": "30-01-2024 13:15:00"
+    },
+    {
+      "customer_id": 1010,
+      "full_name": "Kavya Shinde",
+      "email": "kavya.shinde@example.com",
+      "phone": "+91-9876543219",
+      "date_of_birth": "03-05-2001",
+      "status": "active",
+      "created_at": "02-02-2024 16:20:00"
+    },
+    {
+      "customer_id": 1011,
+      "full_name": "Manish Chavan",
+      "email": "manish.chavan@example.com",
+      "phone": "+91-9876543220",
+      "date_of_birth": "25-10-1992",
+      "status": "blocked",
+      "created_at": "05-02-2024 09:10:00"
+    },
+    {
+      "customer_id": 1012,
+      "full_name": "Isha Desai",
+      "email": "isha.desai@example.com",
+      "phone": "+91-9876543221",
+      "date_of_birth": "16-01-1999",
+      "status": "active",
+      "created_at": "08-02-2024 11:40:00"
+    },
+    {
+      "customer_id": 1013,
+      "full_name": "Siddharth Naik",
+      "email": "siddharth.naik@example.com",
+      "phone": "+91-9876543222",
+      "date_of_birth": "08-12-1996",
+      "status": "inactive",
+      "created_at": "10-02-2024 12:50:00"
+    },
+    {
+      "customer_id": 1014,
+      "full_name": "Ananya Bhosale",
+      "email": "ananya.bhosale@example.com",
+      "phone": "+91-9876543223",
+      "date_of_birth": "21-04-2000",
+      "status": "active",
+      "created_at": "12-02-2024 14:05:00"
+    },
+    {
+      "customer_id": 1015,
+      "full_name": "Nikhil Salve",
+      "email": "nikhil.salve@example.com",
+      "phone": "+91-9876543224",
+      "date_of_birth": "19-08-1995",
+      "status": "active",
+      "created_at": "15-02-2024 15:25:00"
+    },
+    {
+      "customer_id": 1016,
+      "full_name": "Meera Kamat",
+      "email": "meera.kamat@example.com",
+      "phone": "+91-9876543225",
+      "date_of_birth": "07-03-1997",
+      "status": "active",
+      "created_at": "18-02-2024 10:00:00"
+    },
+    {
+      "customer_id": 1017,
+      "full_name": "Arjun Wagh",
+      "email": "arjun.wagh@example.com",
+      "phone": "+91-9876543226",
+      "date_of_birth": "12-06-1994",
+      "status": "inactive",
+      "created_at": "20-02-2024 11:15:00"
+    },
+    {
+      "customer_id": 1018,
+      "full_name": "Riya Gokhale",
+      "email": "riya.gokhale@example.com",
+      "phone": "+91-9876543227",
+      "date_of_birth": "29-09-1999",
+      "status": "active",
+      "created_at": "22-02-2024 13:35:00"
+    },
+    {
+      "customer_id": 1019,
+      "full_name": "Sameer Thakur",
+      "email": "sameer.thakur@example.com",
+      "phone": "+91-9876543228",
+      "date_of_birth": "04-11-1991",
+      "status": "blocked",
+      "created_at": "25-02-2024 14:40:00"
+    },
+    {
+      "customer_id": 1020,
+      "full_name": "Tanvi Raut",
+      "email": "tanvi.raut@example.com",
+      "phone": "+91-9876543229",
+      "date_of_birth": "13-02-2002",
+      "status": "active",
+      "created_at": "28-02-2024 16:00:00"
+    },
+    {
+      "customer_id": 1021,
+      "full_name": "Duplicate Customer",
+      "email": "aarav.sharma@example.com",
+      "phone": "+91-9876543230",
+      "date_of_birth": "15-04-1998",
+      "status": "active",
+      "created_at": "01-03-2024 09:00:00"
+    },
+    {
+      "customer_id": 1022,
+      "full_name": "Missing Email",
+      "email": "",
+      "phone": "+91-9876543231",
+      "date_of_birth": "10-10-1997",
+      "status": "active",
+      "created_at": "02-03-2024 10:00:00"
+    },
+    {
+      "customer_id": 1023,
+      "full_name": "Invalid Status",
+      "email": "invalid.status@example.com",
+      "phone": "+91-9876543232",
+      "date_of_birth": "20-05-1996",
+      "status": "pending",
+      "created_at": "03-03-2024 11:00:00"
+    },
+    {
+      "customer_id": 1024,
+      "full_name": "Invalid Date",
+      "email": "invalid.date@example.com",
+      "phone": "+91-9876543233",
+      "date_of_birth": "31-02-1995",
+      "status": "active",
+      "created_at": "04-03-2024 12:00:00"
+    }
+  ]
+}

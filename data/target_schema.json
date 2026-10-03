@@ -1,0 +1,58 @@
+{
+  "dataset": "users",
+  "description": "Target user records",
+  "maximum_sample_size": 20,
+  "fields": [
+    {
+      "name": "user_id",
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "description": "Unique user identifier"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "description": "User full name"
+    },
+    {
+      "name": "email_address",
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "description": "User email address"
+    },
+    {
+      "name": "mobile",
+      "type": "string",
+      "required": false,
+      "description": "User mobile number"
+    },
+    {
+      "name": "date_of_birth",
+      "type": "string",
+      "format": "YYYY-MM-DD",
+      "required": false,
+      "description": "User date of birth"
+    },
+    {
+      "name": "account_status",
+      "type": "string",
+      "required": true,
+      "allowed_values": [
+        "enabled",
+        "disabled",
+        "suspended"
+      ],
+      "description": "Target user account status"
+    },
+    {
+      "name": "registered_at",
+      "type": "string",
+      "format": "YYYY-MM-DDTHH:mm:ss",
+      "required": true,
+      "description": "Target registration timestamp"
+    }
+  ]
+}

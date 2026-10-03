@@ -1,0 +1,152 @@
+{
+  "dataset": "legacy_customers_to_users",
+  "supported_transformations": [
+    {
+      "name": "direct_copy",
+      "description": "Copy a source field directly to the target field without modification",
+      "input_types": [
+        "string",
+        "integer"
+      ],
+      "output_types": [
+        "string",
+        "integer"
+      ]
+    },
+    {
+      "name": "rename_field",
+      "description": "Map a source field to a target field with a different field name",
+      "input_types": [
+        "string",
+        "integer"
+      ],
+      "output_types": [
+        "string",
+        "integer"
+      ]
+    },
+    {
+      "name": "date_ddmmyyyy_to_yyyymmdd",
+      "description": "Convert a date from DD-MM-YYYY to YYYY-MM-DD",
+      "input_format": "DD-MM-YYYY",
+      "output_format": "YYYY-MM-DD"
+    },
+    {
+      "name": "datetime_ddmmyyyy_to_iso",
+      "description": "Convert DD-MM-YYYY HH:mm:ss to YYYY-MM-DDTHH:mm:ss",
+      "input_format": "DD-MM-YYYY HH:mm:ss",
+      "output_format": "YYYY-MM-DDTHH:mm:ss"
+    },
+    {
+      "name": "status_mapping",
+      "description": "Map legacy account status values to target account status values",
+      "mapping": {
+        "active": "enabled",
+        "inactive": "disabled",
+        "blocked": "suspended"
+      }
+    },
+    {
+      "name": "trim_string",
+      "description": "Remove leading and trailing whitespace from string values",
+      "input_types": [
+        "string"
+      ],
+      "output_types": [
+        "string"
+      ]
+    },
+    {
+      "name": "lowercase_email",
+      "description": "Convert email addresses to lowercase",
+      "input_types": [
+        "string"
+      ],
+      "output_types": [
+        "string"
+      ]
+    }
+  ],
+  "field_mappings": [
+    {
+      "source_field": "customer_id",
+      "target_field": "user_id",
+      "transformation": "rename_field"
+    },
+    {
+      "source_field": "full_name",
+      "target_field": "name",
+      "transformation": "rename_field"
+    },
+    {
+      "source_field": "email",
+      "target_field": "email_address",
+      "transformation": "lowercase_email"
+    },
+    {
+      "source_field": "phone",
+      "target_field": "mobile",
+      "transformation": "rename_field"
+    },
+    {
+      "source_field": "date_of_birth",
+      "target_field": "date_of_birth",
+      "transformation": "date_ddmmyyyy_to_yyyymmdd"
+    },
+    {
+      "source_field": "status",
+      "target_field": "account_status",
+      "transformation": "status_mapping"
+    },
+    {
+      "source_field": "created_at",
+      "target_field": "registered_at",
+      "transformation": "datetime_ddmmyyyy_to_iso"
+    }
+  ],
+  "validation_rules": [
+    {
+      "field": "customer_id",
+      "rule": "required"
+    },
+    {
+      "field": "customer_id",
+      "rule": "unique"
+    },
+    {
+      "field": "full_name",
+      "rule": "required"
+    },
+    {
+      "field": "email",
+      "rule": "required"
+    },
+    {
+      "field": "email",
+      "rule": "valid_email"
+    },
+    {
+      "field": "status",
+      "rule": "allowed_values",
+      "values": [
+        "active",
+        "inactive",
+        "blocked"
+      ]
+    },
+    {
+      "field": "date_of_birth",
+      "rule": "valid_date",
+      "format": "DD-MM-YYYY"
+    },
+    {
+      "field": "created_at",
+      "rule": "valid_datetime",
+      "format": "DD-MM-YYYY HH:mm:ss"
+    }
+  ],
+  "limits": {
+    "maximum_sample_size": 20,
+    "maximum_records_per_migration": 20
+  }
+}

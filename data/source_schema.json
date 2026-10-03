@@ -1,0 +1,57 @@
+{
+  "dataset": "legacy_customers",
+  "description": "Legacy customer records",
+  "maximum_sample_size": 20,
+  "fields": [
+    {
+      "name": "customer_id",
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "description": "Unique customer identifier"
+    },
+    {
+      "name": "full_name",
+      "type": "string",
+      "required": true,
+      "description": "Customer full name"
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "required": true,
+      "description": "Customer email address"
+    },
+    {
+      "name": "phone",
+      "type": "string",
+      "required": false,
+      "description": "Customer phone number"
+    },
+    {
+      "name": "date_of_birth",
+      "type": "string",
+      "format": "DD-MM-YYYY",
+      "required": false,
+      "description": "Customer date of birth"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "required": true,
+      "allowed_values": [
+        "active",
+        "inactive",
+        "blocked"
+      ],
+      "description": "Legacy customer account status"
+    },
+    {
+      "name": "created_at",
+      "type": "string",
+      "format": "DD-MM-YYYY HH:mm:ss",
+      "required": true,
+      "description": "Legacy customer creation timestamp"
+    }
+  ]
+}
